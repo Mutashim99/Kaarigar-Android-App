@@ -7,4 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".Onboarding">
 
+    <ViewFlipper
+        android:layout_width="406dp"
+        android:layout_height="559dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="418dp"
+            android:layout_height="650dp"
+            app:srcCompat="@drawable/plumberonb" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="418dp"
+            android:layout_height="650dp"
+            app:srcCompat="@drawable/beautyonb" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="418dp"
+            android:layout_height="650dp"
+            app:srcCompat="@drawable/chefonb" />
+    </ViewFlipper>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

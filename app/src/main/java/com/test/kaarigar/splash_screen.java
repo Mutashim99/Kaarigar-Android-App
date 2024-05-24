@@ -27,7 +27,7 @@ public class splash_screen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intentOnboarding = new Intent(splash_screen.this,MainActivity.class);
+                Intent intentOnboarding = new Intent(splash_screen.this,Onboarding.class);
                 startActivity(intentOnboarding);
             }
         },4000);

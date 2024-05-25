@@ -45,8 +45,8 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="325dp"
-        android:layout_height="57dp"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/edittextshape"
         android:drawableLeft="@drawable/username"
@@ -62,8 +62,8 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="325dp"
-        android:layout_height="57dp"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/edittextshape"
         android:drawableLeft="@drawable/email"
@@ -79,8 +79,8 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="325dp"
-        android:layout_height="57dp"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/edittextshape"
         android:drawableLeft="@drawable/password"
@@ -135,13 +135,17 @@
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:cornerRadius="12dp"
+        android:background="@drawable/whitebutton"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/appleid"
+        android:elevation="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />

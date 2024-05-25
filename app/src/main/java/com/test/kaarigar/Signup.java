@@ -41,7 +41,7 @@ public class Signup extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gotolocation = new Intent(Signup.this,chooselocation.class);
                 startActivity(gotolocation);
-                finish();
+
             }
         });
 

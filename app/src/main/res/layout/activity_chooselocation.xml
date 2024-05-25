@@ -21,36 +21,88 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="57dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:elevation="5dp"
         android:background="@drawable/edittextshape"
+        android:elevation="5dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
         app:endIconDrawable="@drawable/arrow_drop_down_big_svgrepo_com"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp">
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <AutoCompleteTextView
+            android:id="@+id/listoflocations"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/listoflocations"
-            android:inputType="none"
-            android:text="Choose Location"
-            android:fontFamily="@font/inter_medium"
-            android:textSize="20sp"
             android:background="@drawable/edittextshape"
-            android:paddingBottom="10dp">
+            android:fontFamily="@font/inter_medium"
+            android:inputType="none"
+            android:paddingBottom="10dp"
+            android:text="Choose Location"
+            android:textSize="20sp">
+
         </AutoCompleteTextView>
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/Finish"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/maintheme"
+        android:fontFamily="@font/inter_bold"
+        android:text="Confirm"
+        android:textSize="18sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="357dp"
+        android:layout_marginBottom="543dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:srcCompat="@drawable/ellipse_228" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse_228" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="662dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:srcCompat="@drawable/group_34548" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -84,7 +84,7 @@
         android:text="At Kaarigar, customers satisfaction \n is out first priority!"
         android:textAlignment="center"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/ButtonOnb"
+        app:layout_constraintBottom_toTopOf="@+id/onbbtn"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -92,7 +92,7 @@
         app:layout_constraintVertical_bias="0.212" />
 
     <Button
-        android:id="@+id/ButtonOnb"
+        android:id="@+id/onbbtn"
         android:layout_width="220dp"
         android:layout_height="65dp"
         android:backgroundTint="@color/maintheme"

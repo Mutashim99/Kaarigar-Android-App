@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/usernamesign"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/emailsign"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
@@ -73,12 +73,12 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintEnd_toEndOf="@+id/usernamesign"
+        app:layout_constraintStart_toStartOf="@+id/usernamesign"
+        app:layout_constraintTop_toBottomOf="@+id/usernamesign" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/passsign"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
@@ -90,9 +90,9 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintEnd_toEndOf="@+id/emailsign"
+        app:layout_constraintStart_toStartOf="@+id/emailsign"
+        app:layout_constraintTop_toBottomOf="@+id/emailsign" />
 
     <Button
         android:id="@+id/signup"
@@ -104,9 +104,9 @@
         android:text="Create Account"
         android:textSize="18sp"
         app:cornerRadius="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/passsign"
+        app:layout_constraintStart_toStartOf="@+id/passsign"
+        app:layout_constraintTop_toBottomOf="@+id/passsign" />
 
     <TextView
         android:id="@+id/textView5"
@@ -184,7 +184,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:clickable="true"
+        android:clickable="false"
         android:fontFamily="@font/inter_semibold"
         android:text="Already have an Account?"
         android:textSize="16sp"

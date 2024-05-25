@@ -35,6 +35,16 @@ public class Signup extends AppCompatActivity {
             }
         });
 
+        Button signup = findViewById(R.id.createaccount);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotolocation = new Intent(Signup.this,chooselocation.class);
+                startActivity(gotolocation);
+                finish();
+            }
+        });
+
 
     }
 }

@@ -98,7 +98,7 @@
         android:id="@+id/createaccount"
         android:layout_width="220dp"
         android:layout_height="65dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/maintheme"
         android:fontFamily="@font/inter_bold"
         android:text="Create Account"

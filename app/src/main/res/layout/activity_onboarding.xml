@@ -7,7 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".Onboarding">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="357dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFlipper"
+        app:srcCompat="@drawable/group_34548" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewFlipper"
+        app:layout_constraintEnd_toStartOf="@+id/viewFlipper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse_228" />
+
     <ViewFlipper
+        android:id="@+id/viewFlipper"
         android:layout_width="406dp"
         android:layout_height="559dp"
         android:layout_marginTop="5dp"
@@ -18,8 +40,7 @@
         android:outAnimation="@android:anim/slide_out_right"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -39,6 +60,50 @@
             android:layout_height="650dp"
             app:srcCompat="@drawable/chefonb" />
     </ViewFlipper>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Everyday tasks completed professionally"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/viewFlipper"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/viewFlipper"
+        app:layout_constraintTop_toBottomOf="@+id/viewFlipper" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="At Kaarigar, customers satisfaction is out first priority!"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonOnb"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/ButtonOnb"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/maintheme"
+        android:fontFamily="@font/inter_bold"
+        android:text="Get Started"
+        android:textSize="18sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.851" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

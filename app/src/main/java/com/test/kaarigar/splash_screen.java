@@ -29,6 +29,7 @@ public class splash_screen extends AppCompatActivity {
             public void run() {
                 Intent intentOnboarding = new Intent(splash_screen.this,Onboarding.class);
                 startActivity(intentOnboarding);
+                finish();
             }
         },4000);
 

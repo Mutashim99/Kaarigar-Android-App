@@ -8,6 +8,17 @@
     tools:context=".Onboarding">
 
     <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:src="@drawable/ellipse_228"
+        app:layout_constraintBottom_toBottomOf="@+id/signup"
+        app:layout_constraintStart_toEndOf="@+id/signup"
+        app:layout_constraintTop_toTopOf="@+id/signup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +95,7 @@
         android:text="At Kaarigar, customers satisfaction \n is out first priority!"
         android:textAlignment="center"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/onbbtn"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -92,9 +103,10 @@
         app:layout_constraintVertical_bias="0.212" />
 
     <Button
-        android:id="@+id/onbbtn"
+        android:id="@+id/signup"
         android:layout_width="220dp"
         android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/maintheme"
         android:fontFamily="@font/inter_bold"
         android:text="Get Started"

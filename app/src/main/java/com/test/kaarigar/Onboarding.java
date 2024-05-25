@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.view.View;
-import android.view.View.OnClickListener;
 
 
 import androidx.activity.EdgeToEdge;
@@ -28,7 +26,7 @@ public class Onboarding extends AppCompatActivity {
         });
 
 
-        Button next1 = findViewById(R.id.onbbtn);
+        Button next1 = findViewById(R.id.signup);
         next1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

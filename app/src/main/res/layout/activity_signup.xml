@@ -95,7 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/emailsign" />
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/createaccount"
         android:layout_width="220dp"
         android:layout_height="65dp"
         android:layout_marginTop="16dp"
@@ -117,10 +117,10 @@
         android:text="OR"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/signup"
+        app:layout_constraintEnd_toEndOf="@+id/createaccount"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/signup"
-        app:layout_constraintTop_toBottomOf="@+id/signup" />
+        app:layout_constraintStart_toStartOf="@+id/createaccount"
+        app:layout_constraintTop_toBottomOf="@+id/createaccount" />
 
     <TextView
         android:id="@+id/textView7"

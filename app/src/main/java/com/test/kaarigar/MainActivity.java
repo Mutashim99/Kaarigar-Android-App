@@ -27,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
 
         List<SlideModel> imageList = new ArrayList<>();
 
+        imageList.add(new SlideModel(R.drawable.banner1, ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.banner2, ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.banner3, ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.banner4, ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.banner5, ScaleTypes.FIT));
+
+        ImageSlider imageSlider = findViewById(R.id.image_slider);
+        imageSlider.setImageList(imageList, ScaleTypes.FIT);
+
 
 
 

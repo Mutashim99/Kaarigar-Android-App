@@ -104,5 +104,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         app:srcCompat="@drawable/group_34548" />
 
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="255dp"
+        app:layout_constraintBottom_toTopOf="@+id/Finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:srcCompat="@drawable/locationmap"
+        android:alpha="0.6"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

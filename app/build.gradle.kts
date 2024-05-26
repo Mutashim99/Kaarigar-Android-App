@@ -6,6 +6,10 @@ android {
     namespace = "com.test.kaarigar"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.test.kaarigar"
         minSdk = 26

@@ -1,9 +1,12 @@
 package com.test.kaarigar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +31,19 @@ public class chooselocation extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, loclist);
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.listoflocations);
         autoCompleteTextView.setAdapter(adapter);
+
+        Button gotomain =findViewById(R.id.Finish);
+
+        gotomain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gomain = new Intent(chooselocation.this,MainActivity.class);
+                startActivity(gomain);
+                finish();
+
+
+            }
+        });
 
 
     }

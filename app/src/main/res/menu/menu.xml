@@ -8,5 +8,6 @@
     <item android:title="Messages"
         android:icon="@drawable/messages"/>
     <item android:title="About Us"
-        android:icon="@drawable/about"/>
+        android:icon="@drawable/about"
+        />
 </menu>

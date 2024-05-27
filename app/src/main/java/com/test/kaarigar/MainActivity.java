@@ -4,6 +4,9 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
@@ -43,5 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageSlider imageSlider = findViewById(R.id.image_slider);
         imageSlider.setImageList(imageList, ScaleTypes.FIT);
+
+
     }
 }

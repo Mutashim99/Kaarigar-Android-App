@@ -43,9 +43,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:queryBackground="@android:color/transparent"
-        app:queryHint="What are you looking for today?"
-        app:searchIcon="@drawable/searchnew"
-        >
+        app:queryHint="What are you looking for?"
+        app:searchIcon="@drawable/searchnew">
 
     </androidx.appcompat.widget.SearchView>
 

@@ -52,10 +52,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(horizontalLayoutManager);
 
         List<CardItem> cardItemList = new ArrayList<>();
-        cardItemList.add(new CardItem(R.drawable.pop1, "Service 1", "5.0", "Rs 1000"));
-        cardItemList.add(new CardItem(R.drawable.pop2, "Service 2", "4.5", "Rs 2000"));
-        cardItemList.add(new CardItem(R.drawable.pop3, "Service 3", "4.8", "Rs 1500"));
-        cardItemList.add(new CardItem(R.drawable.pop4, "Service 4", "4.2", "Rs 1800"));
+        cardItemList.add(new CardItem(R.drawable.pop1, "Home \nCleaning", "5.0", "Rs 1000"));
+        cardItemList.add(new CardItem(R.drawable.pop2, "Home \nDisInfection", "4.5", "Rs 2000"));
+        cardItemList.add(new CardItem(R.drawable.pop3, "Ac \nCheckup", "4.8", "Rs 1500"));
+        cardItemList.add(new CardItem(R.drawable.pop4, "Ac \nRepair", "4.2", "Rs 5000"));
+        cardItemList.add(new CardItem(R.drawable.pop5, "Ac \nMaintenance", "4.2", "Rs 1800"));
 
         CardAdapter cardAdapter = new CardAdapter(cardItemList);
         recyclerView.setAdapter(cardAdapter);

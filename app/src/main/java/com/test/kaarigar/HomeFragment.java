@@ -1,5 +1,6 @@
 package com.test.kaarigar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,6 +11,7 @@ import com.denzcoskun.imageslider.models.SlideModel;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +20,7 @@ public class HomeFragment extends Fragment {
     private RecyclerView recyclerView;
     private CardAdapter cardAdapter;
     private ImageSlider imageSlider;
+    private Button searchButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,7 +60,12 @@ public class HomeFragment extends Fragment {
 
         imageSlider.setImageList(imageList, ScaleTypes.FIT);
 
-
+        // Setup Search Button
+        searchButton = view.findViewById(R.id.searchButton);
+        searchButton.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), SearchActivity.class);
+            startActivity(intent);
+        });
 
         return view;
     }

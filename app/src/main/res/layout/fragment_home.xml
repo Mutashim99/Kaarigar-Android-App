@@ -15,26 +15,30 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintStart_toEndOf="@+id/searchButton"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/notifications" />
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/searchView"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchButton"
         android:layout_width="330dp"
         android:layout_height="55dp"
+        android:textSize="15sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/searchnew"
+        android:paddingLeft="15dp"
+        android:paddingRight="45dp"
+        android:text="What are you looking for today?"
+        android:textAllCaps="false"
+        android:textColor="#905E5E5E"
         android:elevation="2dp"
-        app:iconifiedByDefault="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:queryBackground="@android:color/transparent"
-        app:queryHint="What are you looking for?"
-        app:searchIcon="@drawable/searchnew">
+        app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.appcompat.widget.SearchView>
+    </androidx.appcompat.widget.AppCompatButton>
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -47,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView">
+        app:layout_constraintTop_toBottomOf="@+id/searchButton">
 
         <com.denzcoskun.imageslider.ImageSlider
             android:id="@+id/image_slider"

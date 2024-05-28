@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Handling window insets specifically for SearchView
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.searchView), (view, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.fragmentContainerView), (view, insets) -> {
             WindowInsetsCompat insetsCompat = insets;
             int topInset = insetsCompat.getInsets(WindowInsetsCompat.Type.systemBars()).top;
             view.setPadding(view.getPaddingLeft(), topInset, view.getPaddingRight(), view.getPaddingBottom());

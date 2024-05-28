@@ -6,14 +6,15 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import java.util.ArrayList;
 import java.util.List;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
+        if (navHostFragment != null) {
+            NavController navController = navHostFragment.getNavController();
+
+            BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
+            NavigationUI.setupWithNavController(bottomNav, navController);
+        }
 
         // Handling window insets specifically for SearchView
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.searchView), (view, insets) -> {
@@ -31,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Set BottomNavigationView height if necessary
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         int bottomNavHeight = getResources().getDimensionPixelSize(R.dimen.bottom_navigation_height);
-        bottomNavigationView.getLayoutParams().height = bottomNavHeight;
-        bottomNavigationView.requestLayout();
+        BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
+        bottomNav.getLayoutParams().height = bottomNavHeight;
+        bottomNav.requestLayout();
 
         // Setup image slider
         List<SlideModel> imageList = new ArrayList<>();

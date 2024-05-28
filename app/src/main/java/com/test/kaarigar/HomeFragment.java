@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -65,6 +67,12 @@ public class HomeFragment extends Fragment {
         searchButton.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), SearchActivity.class);
             startActivity(intent);
+        });
+
+        ImageView notify = view.findViewById(R.id.notificationmain);
+        notify.setOnClickListener(v -> {
+            Intent gotonotifypage = new Intent(getActivity(),notificationActivity.class);
+            startActivity(gotonotifypage);
         });
 
         return view;

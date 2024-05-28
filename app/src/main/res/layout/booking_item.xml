@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bookimg"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/bookingprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bookimg"
+                app:layout_constraintTop_toBottomOf="@+id/bookingname" />
+
+            <TextView
+                android:id="@+id/bookingname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/bookingprice"
+                app:layout_constraintStart_toEndOf="@+id/bookimg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/cancelbutt"
+                android:layout_width="91dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/booking_cancel_icon"
+                android:drawablePadding="0dp"
+                android:elevation="5dp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="2dp"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:cornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/callbutt" />
+
+            <Button
+                android:id="@+id/callbutt"
+                android:layout_width="91dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/call"
+                android:drawablePadding="15dp"
+                android:elevation="5dp"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingLeft="5dp"
+                android:text="Call"
+                android:textSize="14sp"
+                app:cornerRadius="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/cancelbutt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

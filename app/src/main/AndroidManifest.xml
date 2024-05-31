@@ -5,6 +5,7 @@
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -17,6 +18,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kaarigar"
         tools:targetApi="31">
+        <activity
+            android:name=".categories.ShiftingCategory"
+            android:exported="false" />
+        <activity
+            android:name=".categories.PlumbingCategory"
+            android:exported="false" />
+        <activity
+            android:name=".categories.PaintingCategory"
+            android:exported="false" />
+        <activity
+            android:name=".categories.CleaningCategory"
+            android:exported="false" />
+        <activity
+            android:name=".categories.ElectronicsCategory"
+            android:exported="false" />
+        <activity
+            android:name=".categories.AppliancesCategory"
+            android:exported="false" />
+        <activity
+            android:name=".categories.BeautyCategory"
+            android:exported="false" />
+        <activity
+            android:name=".categories.AcrepairCategory"
+            android:exported="false" />
         <activity
             android:name=".notificationActivity"
             android:exported="false" />

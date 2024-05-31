@@ -37,7 +37,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/inter_bold"
-                android:text="Ac Repiaring"
+                android:text="Ac Repairing"
                 android:textSize="34sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView99"
                 app:layout_constraintTop_toTopOf="parent" />

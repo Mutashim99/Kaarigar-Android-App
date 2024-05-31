@@ -8,6 +8,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.test.kaarigar.categories.AcrepairCategory;
+import com.test.kaarigar.categories.AppliancesCategory;
+import com.test.kaarigar.categories.BeautyCategory;
+import com.test.kaarigar.categories.CleaningCategory;
+import com.test.kaarigar.categories.ElectronicsCategory;
+import com.test.kaarigar.categories.PaintingCategory;
+import com.test.kaarigar.categories.PlumbingCategory;
+import com.test.kaarigar.categories.ShiftingCategory;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -73,6 +82,78 @@ public class HomeFragment extends Fragment {
         notify.setOnClickListener(v -> {
             Intent gotonotifypage = new Intent(getActivity(),notificationActivity.class);
             startActivity(gotonotifypage);
+        });
+
+        ImageView ac = view.findViewById(R.id.acrepair);
+        ImageView bty = view.findViewById(R.id.beauty);
+        ImageView apl = view.findViewById(R.id.appliance);
+        ImageView elc = view.findViewById(R.id.electronics);
+        ImageView cln = view.findViewById(R.id.cleaning);
+        ImageView paint = view.findViewById(R.id.painting);
+        ImageView plum = view.findViewById(R.id.plumbing);
+        ImageView shft = view.findViewById(R.id.shifting);
+
+        ac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goac = new Intent(getActivity(), AcrepairCategory.class);
+                startActivity(goac);
+            }
+        });
+        bty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gobty = new Intent(getActivity(), BeautyCategory.class);
+                startActivity(gobty);
+            }
+        });
+
+        apl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goapl = new Intent(getActivity(), AppliancesCategory.class);
+                startActivity(goapl);
+            }
+        });
+
+        elc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goelc = new Intent(getActivity(), ElectronicsCategory.class);
+                startActivity(goelc);
+            }
+        });
+
+        cln.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gocln = new Intent(getActivity(), CleaningCategory.class);
+                startActivity(gocln);
+            }
+        });
+
+        paint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gopaint = new Intent(getActivity(), PaintingCategory.class);
+                startActivity(gopaint);
+            }
+        });
+
+        plum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goplum = new Intent(getActivity(), PlumbingCategory.class);
+                startActivity(goplum);
+            }
+        });
+
+        shft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goshft = new Intent(getActivity(), ShiftingCategory.class);
+                startActivity(goshft);
+            }
         });
 
         return view;

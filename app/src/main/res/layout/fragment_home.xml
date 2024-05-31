@@ -83,7 +83,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView14"
+                android:id="@+id/acrepair"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -99,17 +99,17 @@
                 android:fontFamily="@font/inter_medium"
                 android:text="AC Repair"
                 android:textSize="13sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView14"
-                app:layout_constraintStart_toStartOf="@+id/imageView14"
-                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+                app:layout_constraintEnd_toEndOf="@+id/acrepair"
+                app:layout_constraintStart_toStartOf="@+id/acrepair"
+                app:layout_constraintTop_toBottomOf="@+id/acrepair" />
 
             <ImageView
-                android:id="@+id/imageView15"
+                android:id="@+id/beauty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintStart_toEndOf="@+id/acrepair"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/catbeauty" />
 
@@ -120,19 +120,19 @@
                 android:fontFamily="@font/inter_medium"
                 android:text="Beauty"
                 android:textSize="13sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView15"
-                app:layout_constraintStart_toStartOf="@+id/imageView15"
-                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+                app:layout_constraintEnd_toEndOf="@+id/beauty"
+                app:layout_constraintStart_toStartOf="@+id/beauty"
+                app:layout_constraintTop_toBottomOf="@+id/beauty" />
 
             <ImageView
-                android:id="@+id/imageView16"
+                android:id="@+id/appliance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/imageView17"
-                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintEnd_toStartOf="@+id/electronics"
+                app:layout_constraintStart_toEndOf="@+id/beauty"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/catappliance" />
 
@@ -143,19 +143,19 @@
                 android:fontFamily="@font/inter_medium"
                 android:text="Appliance"
                 android:textSize="13sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView16"
-                app:layout_constraintStart_toStartOf="@+id/imageView16"
-                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+                app:layout_constraintEnd_toEndOf="@+id/appliance"
+                app:layout_constraintStart_toStartOf="@+id/appliance"
+                app:layout_constraintTop_toBottomOf="@+id/appliance" />
 
             <ImageView
-                android:id="@+id/imageView17"
+                android:id="@+id/electronics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                app:layout_constraintStart_toEndOf="@+id/appliance"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/catelectronics" />
 
@@ -166,12 +166,12 @@
                 android:fontFamily="@font/inter_medium"
                 android:text="Electronics"
                 android:textSize="13sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView17"
-                app:layout_constraintStart_toStartOf="@+id/imageView17"
-                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+                app:layout_constraintEnd_toEndOf="@+id/electronics"
+                app:layout_constraintStart_toStartOf="@+id/electronics"
+                app:layout_constraintTop_toBottomOf="@+id/electronics" />
 
             <ImageView
-                android:id="@+id/imageView21"
+                android:id="@+id/shifting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -179,7 +179,7 @@
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.545"
-                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintStart_toEndOf="@+id/plumbing"
                 app:layout_constraintTop_toBottomOf="@+id/textView15"
                 app:srcCompat="@drawable/catshifting" />
 
@@ -192,12 +192,12 @@
                 android:text="Cleaning"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView18"
-                app:layout_constraintStart_toStartOf="@+id/imageView18"
-                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+                app:layout_constraintEnd_toEndOf="@+id/cleaning"
+                app:layout_constraintStart_toStartOf="@+id/cleaning"
+                app:layout_constraintTop_toBottomOf="@+id/cleaning" />
 
             <ImageView
-                android:id="@+id/imageView18"
+                android:id="@+id/cleaning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -215,17 +215,17 @@
                 android:fontFamily="@font/inter_medium"
                 android:text="Painting"
                 android:textSize="13sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView19"
-                app:layout_constraintStart_toStartOf="@+id/imageView19"
-                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+                app:layout_constraintEnd_toEndOf="@+id/painting"
+                app:layout_constraintStart_toStartOf="@+id/painting"
+                app:layout_constraintTop_toBottomOf="@+id/painting" />
 
             <ImageView
-                android:id="@+id/imageView19"
+                android:id="@+id/painting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
-                app:layout_constraintStart_toEndOf="@+id/imageView18"
+                app:layout_constraintStart_toEndOf="@+id/cleaning"
                 app:layout_constraintTop_toBottomOf="@+id/textView13"
                 app:srcCompat="@drawable/catpainting" />
 
@@ -236,19 +236,19 @@
                 android:fontFamily="@font/inter_medium"
                 android:text="Plumbing"
                 android:textSize="13sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView20"
-                app:layout_constraintStart_toStartOf="@+id/imageView20"
-                app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+                app:layout_constraintEnd_toEndOf="@+id/plumbing"
+                app:layout_constraintStart_toStartOf="@+id/plumbing"
+                app:layout_constraintTop_toBottomOf="@+id/plumbing" />
 
             <ImageView
-                android:id="@+id/imageView20"
+                android:id="@+id/plumbing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/imageView21"
-                app:layout_constraintStart_toEndOf="@+id/imageView19"
+                app:layout_constraintEnd_toStartOf="@+id/shifting"
+                app:layout_constraintStart_toEndOf="@+id/painting"
                 app:layout_constraintTop_toBottomOf="@+id/textView14"
                 app:srcCompat="@drawable/catplumbing" />
 
@@ -259,9 +259,9 @@
                 android:fontFamily="@font/inter_medium"
                 android:text="Shifting"
                 android:textSize="13sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView21"
-                app:layout_constraintStart_toStartOf="@+id/imageView21"
-                app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+                app:layout_constraintEnd_toEndOf="@+id/shifting"
+                app:layout_constraintStart_toStartOf="@+id/shifting"
+                app:layout_constraintTop_toBottomOf="@+id/shifting" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

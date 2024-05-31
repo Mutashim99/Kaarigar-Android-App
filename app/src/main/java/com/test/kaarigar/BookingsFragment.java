@@ -46,8 +46,16 @@ public class BookingsFragment extends Fragment {
 
         // Temporary data for testing
         if (bookingList.isEmpty()) {
-            bookingList.add(new Booking("Booking 1", "$100", "1234567890", R.drawable.pop1));
-            bookingList.add(new Booking("Booking 2", "$200", "0987654321", R.drawable.pop2));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+           
             saveBookings();
         }
     }

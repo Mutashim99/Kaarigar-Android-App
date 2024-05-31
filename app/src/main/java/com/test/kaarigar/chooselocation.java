@@ -37,7 +37,7 @@ public class chooselocation extends AppCompatActivity {
         gotomain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gomain = new Intent(chooselocation.this,MainActivity.class);
+                Intent gomain = new Intent(chooselocation.this,Login.class);
                 startActivity(gomain);
                 finish();
 

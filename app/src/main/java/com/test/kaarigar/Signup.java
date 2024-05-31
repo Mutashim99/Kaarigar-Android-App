@@ -63,7 +63,7 @@ public class Signup extends AppCompatActivity {
                     editor.apply();
 
                     // Redirect to the login activity
-                    Intent intent = new Intent(Signup.this, Login.class);
+                    Intent intent = new Intent(Signup.this, chooselocation.class);
                     startActivity(intent);
                     finish();
                 }

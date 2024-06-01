@@ -42,7 +42,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/goldenbutt"
                 android:fontFamily="@font/inter_medium"
-                android:padding="5dp"
+                android:padding="10dp"
                 android:text="Rs 10000"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView14"

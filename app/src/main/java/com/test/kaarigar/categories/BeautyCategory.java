@@ -45,10 +45,10 @@ public class BeautyCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.pop1, "(4.5)", "Makeup Services", "Rs 1500", chooselocation.class));
-        cardItemList.add(new categorymodel(R.drawable.pop2, "(4.0)", "Hair Styling", "Rs 2000", notificationActivity.class));
-        cardItemList.add(new categorymodel(R.drawable.pop3, "(4.7)", "Manicure & Pedicure", "Rs 1000", Onboarding.class));
-        cardItemList.add(new categorymodel(R.drawable.pop4, "(4.2)", "Facial Services", "Rs 1800", Login.class));
+        cardItemList.add(new categorymodel(R.drawable.makeup, "(4.5)", "Makeup Services", "Rs 1500", chooselocation.class));
+        cardItemList.add(new categorymodel(R.drawable.hair, "(4.0)", "Hair Styling", "Rs 2000", notificationActivity.class));
+        cardItemList.add(new categorymodel(R.drawable.nail, "(4.7)", "Manicure & Pedicure", "Rs 1000", Onboarding.class));
+        cardItemList.add(new categorymodel(R.drawable.facial, "(4.2)", "Facial Services", "Rs 1800", Login.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

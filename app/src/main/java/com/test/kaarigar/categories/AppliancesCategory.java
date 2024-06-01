@@ -45,10 +45,10 @@ public class AppliancesCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.pop1, "(4.5)", "Washing Machine \nRepair", "Rs 1500", Notification.class));
-        cardItemList.add(new categorymodel(R.drawable.pop2, "(4.0)", "Refrigerator \nRepair", "Rs 2000", MainActivity.class));
-        cardItemList.add(new categorymodel(R.drawable.pop3, "(4.7)", "Microwave \nRepair", "Rs 1000", Signup.class));
-        cardItemList.add(new categorymodel(R.drawable.pop4, "(4.2)", "Oven \nRepair", "Rs 1800", chooselocation.class));
+        cardItemList.add(new categorymodel(R.drawable.washing_machine, "(4.5)", "Washing Machine \nRepair", "Rs 1500", Notification.class));
+        cardItemList.add(new categorymodel(R.drawable.refrigirator, "(4.0)", "Refrigerator \nRepair", "Rs 2000", MainActivity.class));
+        cardItemList.add(new categorymodel(R.drawable.microwave, "(4.7)", "Microwave \nRepair", "Rs 1000", Signup.class));
+        cardItemList.add(new categorymodel(R.drawable.oven, "(4.2)", "Oven \nRepair", "Rs 1800", chooselocation.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

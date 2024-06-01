@@ -45,10 +45,10 @@ public class ElectronicsCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.pop1, "(4.5)", "Laptop Repair", "Rs 1500", Signup.class));
-        cardItemList.add(new categorymodel(R.drawable.pop2, "(4.0)", "Mobile Repair", "Rs 2000", Onboarding.class));
-        cardItemList.add(new categorymodel(R.drawable.pop3, "(4.7)", "TV Repair", "Rs 1000", Login.class));
-        cardItemList.add(new categorymodel(R.drawable.pop4, "(4.2)", "Camera Repair", "Rs 1800", chooselocation.class));
+        cardItemList.add(new categorymodel(R.drawable.laptop, "(4.5)", "Laptop Repair", "Rs 1500", Signup.class));
+        cardItemList.add(new categorymodel(R.drawable.mobile, "(4.0)", "Mobile Repair", "Rs 2000", Onboarding.class));
+        cardItemList.add(new categorymodel(R.drawable.tv, "(4.7)", "TV Repair", "Rs 1000", Login.class));
+        cardItemList.add(new categorymodel(R.drawable.camera, "(4.2)", "Camera Repair", "Rs 1800", chooselocation.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

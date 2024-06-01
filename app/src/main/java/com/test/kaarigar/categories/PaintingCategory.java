@@ -45,10 +45,10 @@ public class PaintingCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.pop1, "(4.5)", "Interior Painting", "Rs 1500", Login.class));
-        cardItemList.add(new categorymodel(R.drawable.pop2, "(4.0)", "Exterior Painting", "Rs 2000", Signup.class));
-        cardItemList.add(new categorymodel(R.drawable.pop3, "(4.7)", "Wall Painting", "Rs 1000", chooselocation.class));
-        cardItemList.add(new categorymodel(R.drawable.pop4, "(4.2)", "Ceiling Painting", "Rs 1800", Onboarding.class));
+        cardItemList.add(new categorymodel(R.drawable.interior, "(4.5)", "Interior Painting", "Rs 1500", Login.class));
+        cardItemList.add(new categorymodel(R.drawable.exterior, "(4.0)", "Exterior Painting", "Rs 2000", Signup.class));
+        cardItemList.add(new categorymodel(R.drawable.wallpaper, "(4.7)", "Wallpaper Vinyl", "Rs 1000", chooselocation.class));
+        cardItemList.add(new categorymodel(R.drawable.ceiling, "(4.2)", "Ceiling Painting", "Rs 1800", Onboarding.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

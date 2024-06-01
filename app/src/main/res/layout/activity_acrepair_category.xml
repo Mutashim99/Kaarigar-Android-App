@@ -20,7 +20,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView99"
+                android:id="@+id/imgcatAC"
                 android:layout_width="8dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="16dp"
@@ -31,7 +31,7 @@
                 app:srcCompat="@drawable/sidedandi" />
 
             <TextView
-                android:id="@+id/Textview151367"
+                android:id="@+id/txtcatAC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -39,7 +39,7 @@
                 android:fontFamily="@font/inter_bold"
                 android:text="Ac Repairing"
                 android:textSize="34sp"
-                app:layout_constraintStart_toEndOf="@+id/imageView99"
+                app:layout_constraintStart_toEndOf="@+id/imgcatAC"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 

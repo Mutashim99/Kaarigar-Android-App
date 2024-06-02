@@ -42,12 +42,12 @@
                 android:layout_width="329dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="26dp"
                 android:fontFamily="@font/inter_medium"
                 android:text="At Kaarigar, we specialize in providing top-notch AC repair services to ensure your comfort during the hottest days. Our team of skilled technicians is equipped to handle all types of air conditioning issues, from routine maintenance to complex repairs. We prioritize quick response times, professional service, and customer satisfaction. Trust Kaarigar to keep your AC running smoothly and efficiently all year round."
                 android:textAlignment="textStart"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView33" />
@@ -126,7 +126,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/addwish"
                 android:layout_width="190dp"
                 android:layout_height="65dp"
                 android:layout_marginStart="8dp"
@@ -155,7 +155,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button8" />
+                app:layout_constraintStart_toEndOf="@+id/addwish" />
 
             <TextView
                 android:id="@+id/textView30"

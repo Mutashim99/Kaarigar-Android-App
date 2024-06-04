@@ -19,6 +19,9 @@
         android:theme="@style/Theme.Kaarigar"
         tools:targetApi="31">
         <activity
+            android:name=".ConfirmBooking"
+            android:exported="false" />
+        <activity
             android:name=".detailpage.AcDetails4"
             android:exported="false" />
         <activity

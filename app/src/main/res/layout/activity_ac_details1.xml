@@ -42,7 +42,7 @@
                 android:layout_width="329dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="26dp"
                 android:fontFamily="@font/inter_medium"
                 android:text="At Kaarigar, we specialize in providing top-notch AC repair services to ensure your comfort during the hottest days. Our team of skilled technicians is equipped to handle all types of air conditioning issues, from routine maintenance to complex repairs. We prioritize quick response times, professional service, and customer satisfaction. Trust Kaarigar to keep your AC running smoothly and efficiently all year round."
@@ -53,27 +53,27 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
-            <TextView
-                android:id="@+id/textView33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
-                android:fontFamily="@font/inter_semibold"
-                android:text="Description"
-                android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/imageView20"
-                app:layout_constraintTop_toBottomOf="@+id/textView36" />
-
             <ImageView
                 android:id="@+id/imageView20"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="212dp"
+                android:layout_marginTop="260dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/sidedandi" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="72dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Description"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
             <ImageView
                 android:id="@+id/imageView19"
@@ -113,13 +113,36 @@
                 android:id="@+id/textView36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="Rs.5999"
                 android:textSize="48sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView36"
+                app:srcCompat="@drawable/timer_1407089" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="138dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="2-3 hrs"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

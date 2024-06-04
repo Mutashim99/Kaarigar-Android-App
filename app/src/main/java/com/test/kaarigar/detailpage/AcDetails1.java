@@ -40,5 +40,6 @@ public class AcDetails1 extends AppCompatActivity {
                 startActivity(goproceed);
             }
         });
+        
     }
 }

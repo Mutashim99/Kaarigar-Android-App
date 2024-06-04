@@ -1,6 +1,9 @@
 package com.test.kaarigar.detailpage;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.test.kaarigar.ConfirmBooking;
 import com.test.kaarigar.R;
 
 public class AcDetails1 extends AppCompatActivity {
@@ -26,5 +30,15 @@ public class AcDetails1 extends AppCompatActivity {
 
         CardView foregroundCardView = findViewById(R.id.frontcard);
         foregroundCardView.bringToFront();
+
+        Button gonextact = findViewById(R.id.booknow);
+
+        gonextact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goproceed = new Intent(AcDetails1.this , ConfirmBooking.class);
+                startActivity(goproceed);
+            }
+        });
     }
 }

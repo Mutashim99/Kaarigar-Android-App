@@ -17,6 +17,10 @@ import com.test.kaarigar.R;
 import com.test.kaarigar.categories.categoryAdapter;
 import com.test.kaarigar.categories.categorymodel;
 import com.test.kaarigar.chooselocation;
+import com.test.kaarigar.detailpage.Btydetails1;
+import com.test.kaarigar.detailpage.Btydetails2;
+import com.test.kaarigar.detailpage.Btydetails3;
+import com.test.kaarigar.detailpage.Btydetails4;
 import com.test.kaarigar.notificationActivity;
 
 import java.util.ArrayList;
@@ -45,10 +49,10 @@ public class BeautyCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.makeup, "(4.5)", "Makeup Services", "Rs 1500", chooselocation.class));
-        cardItemList.add(new categorymodel(R.drawable.hair, "(4.0)", "Hair Styling", "Rs 2000", notificationActivity.class));
-        cardItemList.add(new categorymodel(R.drawable.nail, "(4.7)", "Manicure & Pedicure", "Rs 1000", Onboarding.class));
-        cardItemList.add(new categorymodel(R.drawable.facial, "(4.2)", "Facial Services", "Rs 1800", Login.class));
+        cardItemList.add(new categorymodel(R.drawable.makeup, "(4.5)", "Makeup Services", "Rs 4500", Btydetails1.class));
+        cardItemList.add(new categorymodel(R.drawable.hair, "(4.0)", "Hair Styling", "Rs 2000", Btydetails2.class));
+        cardItemList.add(new categorymodel(R.drawable.nail, "(4.7)", "Manicure & Pedicure", "Rs 1000", Btydetails3.class));
+        cardItemList.add(new categorymodel(R.drawable.facial, "(4.2)", "Facial Services", "Rs 6000", Btydetails4.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

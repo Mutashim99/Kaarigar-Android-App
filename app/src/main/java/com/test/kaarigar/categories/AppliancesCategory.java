@@ -18,6 +18,10 @@ import com.test.kaarigar.Signup;
 import com.test.kaarigar.categories.categoryAdapter;
 import com.test.kaarigar.categories.categorymodel;
 import com.test.kaarigar.chooselocation;
+import com.test.kaarigar.detailpage.APdetails1;
+import com.test.kaarigar.detailpage.APdetails2;
+import com.test.kaarigar.detailpage.APdetails3;
+import com.test.kaarigar.detailpage.APdetails4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +49,10 @@ public class AppliancesCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.washing_machine, "(4.5)", "Washing Machine \nRepair", "Rs 1500", Notification.class));
-        cardItemList.add(new categorymodel(R.drawable.refrigirator, "(4.0)", "Refrigerator \nRepair", "Rs 2000", MainActivity.class));
-        cardItemList.add(new categorymodel(R.drawable.microwave, "(4.7)", "Microwave \nRepair", "Rs 1000", Signup.class));
-        cardItemList.add(new categorymodel(R.drawable.oven, "(4.2)", "Oven \nRepair", "Rs 1800", chooselocation.class));
+        cardItemList.add(new categorymodel(R.drawable.washing_machine, "(4.5)", "Washing Machine \nRepair", "Rs 1500", APdetails1.class));
+        cardItemList.add(new categorymodel(R.drawable.refrigirator, "(4.0)", "Refrigerator \nRepair", "Rs 2000", APdetails2.class));
+        cardItemList.add(new categorymodel(R.drawable.microwave, "(4.7)", "Microwave \nRepair", "Rs 1000", APdetails3.class));
+        cardItemList.add(new categorymodel(R.drawable.oven, "(4.2)", "Oven \nRepair", "Rs 1800", APdetails4.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

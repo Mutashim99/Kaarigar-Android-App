@@ -123,7 +123,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bookingdone"
         android:layout_width="330dp"
         android:layout_height="60dp"
         android:layout_marginBottom="50dp"

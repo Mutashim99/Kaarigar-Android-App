@@ -19,6 +19,9 @@ import com.test.kaarigar.Signup;
 import com.test.kaarigar.categories.categoryAdapter;
 import com.test.kaarigar.categories.categorymodel;
 import com.test.kaarigar.detailpage.AcDetails1;
+import com.test.kaarigar.detailpage.AcDetails2;
+import com.test.kaarigar.detailpage.AcDetails3;
+import com.test.kaarigar.detailpage.AcDetails4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,9 +50,9 @@ public class AcrepairCategory extends AppCompatActivity {
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
         cardItemList.add(new categorymodel(R.drawable.accat1, "(4.8)", "AC Repair", "Rs 5999", AcDetails1.class));
-        cardItemList.add(new categorymodel(R.drawable.accat2, "(4.2)", "AC Duct Cleaning", "Rs3999", Signup.class));
-        cardItemList.add(new categorymodel(R.drawable.pop4, "(4.5)", "AC Routine Repair", "Rs 2000", Login.class));
-        cardItemList.add(new categorymodel(R.drawable.pop5, "(3.9)", "AC Installation", "Rs 1999", MainActivity.class));
+        cardItemList.add(new categorymodel(R.drawable.accat2, "(4.2)", "AC Duct Cleaning", "Rs3999", AcDetails2.class));
+        cardItemList.add(new categorymodel(R.drawable.pop4, "(4.5)", "AC Routine Repair", "Rs 2000", AcDetails3.class));
+        cardItemList.add(new categorymodel(R.drawable.pop5, "(3.9)", "AC Installation", "Rs 1999", AcDetails4.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

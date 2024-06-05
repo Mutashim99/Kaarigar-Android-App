@@ -25,7 +25,7 @@ public class ConfirmBooking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_confirm_booking);
-        
+
         editTextName = findViewById(R.id.editTextText);
         editTextAddress = findViewById(R.id.editTextText2);
         editTextPhone = findViewById(R.id.editTextPhone);

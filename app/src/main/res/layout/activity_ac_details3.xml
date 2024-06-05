@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/accat2" />
+        app:srcCompat="@drawable/pop4" />
 
 
     <androidx.cardview.widget.CardView
@@ -42,12 +42,12 @@
                 android:layout_width="329dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="26dp"
                 android:fontFamily="@font/inter_medium"
-                android:text="At Kaarigar, we offer professional AC duct cleaning services to ensure your indoor air quality remains fresh and healthy. Our skilled technicians use advanced equipment to thoroughly clean and sanitize your air ducts, removing dust, allergens, and contaminants. With our service, you can enjoy improved airflow, enhanced system efficiency, and a cleaner living environment. Trust Kaarigar to deliver exceptional results and keep your AC system running smoothly."
+                android:text="At Kaarigar, we provide expert AC routine repair services to keep your air conditioning system operating at its best. Our experienced technicians perform comprehensive inspections, diagnose issues, and carry out necessary repairs to ensure optimal performance and efficiency. Whether it's a minor tune-up or fixing a major problem, we prioritize your comfort and satisfaction. Count on Kaarigar for reliable and prompt AC repair services that extend the lifespan of your system and maintain a cool, comfortable environment in your home or office.      "
                 android:textAlignment="textStart"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="280dp"
+                android:layout_marginTop="260dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/sidedandi" />
@@ -91,7 +91,7 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="165dp"
-                android:text="(4.2)"
+                android:text="(4.5)"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView19"
@@ -115,8 +115,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_bold"
-                android:text="Rs.3999"
-                android:textSize="48sp"
+                android:text="Rs.2000"
+                android:textSize="34sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView19" />
@@ -184,7 +184,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/inter_bold"
-                android:text="Rs.3999 incl Tax."
+                android:text="Rs.2000 incl Tax."
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/textView35"
                 app:layout_constraintTop_toTopOf="parent" />

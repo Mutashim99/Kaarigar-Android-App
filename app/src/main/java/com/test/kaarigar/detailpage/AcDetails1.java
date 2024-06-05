@@ -28,9 +28,6 @@ public class AcDetails1 extends AppCompatActivity {
             return insets;
         });
 
-        CardView foregroundCardView = findViewById(R.id.frontcard);
-        foregroundCardView.bringToFront();
-
         Button gonextact = findViewById(R.id.booknow);
 
         gonextact.setOnClickListener(new View.OnClickListener() {

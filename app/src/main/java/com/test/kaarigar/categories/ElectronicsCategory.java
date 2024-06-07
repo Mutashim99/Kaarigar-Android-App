@@ -18,6 +18,10 @@ import com.test.kaarigar.Signup;
 import com.test.kaarigar.categories.categoryAdapter;
 import com.test.kaarigar.categories.categorymodel;
 import com.test.kaarigar.chooselocation;
+import com.test.kaarigar.detailpage.Elcdetails1;
+import com.test.kaarigar.detailpage.Elcdetails2;
+import com.test.kaarigar.detailpage.Elcdetails3;
+import com.test.kaarigar.detailpage.Elcdetails4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +49,10 @@ public class ElectronicsCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.laptop, "(4.5)", "Laptop Repair", "Rs 1500", Signup.class));
-        cardItemList.add(new categorymodel(R.drawable.mobile, "(4.0)", "Mobile Repair", "Rs 2000", Onboarding.class));
-        cardItemList.add(new categorymodel(R.drawable.tv, "(4.7)", "TV Repair", "Rs 1000", Login.class));
-        cardItemList.add(new categorymodel(R.drawable.camera, "(4.2)", "Camera Repair", "Rs 1800", chooselocation.class));
+        cardItemList.add(new categorymodel(R.drawable.laptop, "(4.5)", "Laptop Repair", "Rs 2999", Elcdetails1.class));
+        cardItemList.add(new categorymodel(R.drawable.mobile, "(4.0)", "Mobile Repair", "Rs 2000", Elcdetails2.class));
+        cardItemList.add(new categorymodel(R.drawable.tv, "(4.7)", "TV Repair", "Rs 4000", Elcdetails3.class));
+        cardItemList.add(new categorymodel(R.drawable.camera, "(4.2)", "Camera Repair", "Rs 18000", Elcdetails4.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

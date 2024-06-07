@@ -48,7 +48,7 @@ public class PlumbingCategory extends AppCompatActivity {
         cardItemList.add(new categorymodel(R.drawable.pipes, "(4.5)", "Pipe Repair", "Rs 1500", Signup.class));
         cardItemList.add(new categorymodel(R.drawable.drain, "(4.0)", "Drain Cleaning", "Rs 2000", chooselocation.class));
         cardItemList.add(new categorymodel(R.drawable.leak, "(4.7)", "Leak Fixing", "Rs 1000", Onboarding.class));
-        cardItemList.add(new categorymodel(R.drawable.heater, "(4.2)", "Water Heater Repair", "Rs 1800", Login.class));
+        cardItemList.add(new categorymodel(R.drawable.heater, "(4.2)", "Water Heater Repair", "Rs 18000", Login.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

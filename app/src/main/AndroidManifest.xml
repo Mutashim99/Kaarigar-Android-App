@@ -19,6 +19,18 @@
         android:theme="@style/Theme.Kaarigar"
         tools:targetApi="31">
         <activity
+            android:name=".detailpage.Plmbdetails4"
+            android:exported="false" />
+        <activity
+            android:name=".detailpage.Plmbdetails3"
+            android:exported="false" />
+        <activity
+            android:name=".detailpage.Plmbdetails2"
+            android:exported="false" />
+        <activity
+            android:name=".detailpage.Plmbdetails1"
+            android:exported="false" />
+        <activity
             android:name=".detailpage.Pntdetails4"
             android:exported="false" />
         <activity

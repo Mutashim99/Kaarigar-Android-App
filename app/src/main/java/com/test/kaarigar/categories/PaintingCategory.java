@@ -54,7 +54,6 @@ public class PaintingCategory extends AppCompatActivity {
         cardItemList.add(new categorymodel(R.drawable.wallpaper, "(4.7)", "Wallpaper Vinyl", "Rs 10000", Pntdetails3.class));
         cardItemList.add(new categorymodel(R.drawable.ceiling, "(4.2)", "Ceiling Painting", "Rs 18000", Pntdetails4.class));
         
-
         cardAdapter = new categoryAdapter(cardItemList, item -> {
             Intent intent = new Intent(PaintingCategory.this, item.getTargetActivity());
             startActivity(intent);

@@ -19,6 +19,18 @@
         android:theme="@style/Theme.Kaarigar"
         tools:targetApi="31">
         <activity
+            android:name=".detailpage.Elcdetails4"
+            android:exported="false" />
+        <activity
+            android:name=".detailpage.Elcdetails3"
+            android:exported="false" />
+        <activity
+            android:name=".detailpage.Elcdetails2"
+            android:exported="false" />
+        <activity
+            android:name=".detailpage.Elcdetails1"
+            android:exported="false" />
+        <activity
             android:name=".detailpage.Cldetails4"
             android:exported="false" />
         <activity

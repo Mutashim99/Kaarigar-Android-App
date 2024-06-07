@@ -18,6 +18,10 @@ import com.test.kaarigar.Signup;
 import com.test.kaarigar.categories.categoryAdapter;
 import com.test.kaarigar.categories.categorymodel;
 import com.test.kaarigar.chooselocation;
+import com.test.kaarigar.detailpage.Shftdetails1;
+import com.test.kaarigar.detailpage.Shftdetails2;
+import com.test.kaarigar.detailpage.Shftdetails3;
+import com.test.kaarigar.detailpage.Shftdetails4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +49,10 @@ public class ShiftingCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.house_shifting, "(4.5)", "House Shifting", "Rs 1500", chooselocation.class));
-        cardItemList.add(new categorymodel(R.drawable.office_shifting, "(4.0)", "Office Shifting", "Rs 2000", Onboarding.class));
-        cardItemList.add(new categorymodel(R.drawable.warehouse_shifting, "(4.7)", "Warehouse Shifting", "Rs 1000", Signup.class));
-        cardItemList.add(new categorymodel(R.drawable.furniture_shifting, "(4.2)", "Furniture Shifting", "Rs 1800", Login.class));
+        cardItemList.add(new categorymodel(R.drawable.house_shifting, "(4.5)", "House Shifting", "Rs 1500", Shftdetails1.class));
+        cardItemList.add(new categorymodel(R.drawable.office_shifting, "(4.0)", "Office Shifting", "Rs 2000", Shftdetails2.class));
+        cardItemList.add(new categorymodel(R.drawable.warehouse_shifting, "(4.7)", "Warehouse Shifting", "Rs 1000", Shftdetails3.class));
+        cardItemList.add(new categorymodel(R.drawable.furniture_shifting, "(4.2)", "Furniture Shifting", "Rs 1800", Shftdetails4.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

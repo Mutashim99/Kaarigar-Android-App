@@ -48,12 +48,12 @@ public class PaintingCategory extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         cardItemList = new ArrayList<>();
-        // Add data to cardItemList with the target activities
+
         cardItemList.add(new categorymodel(R.drawable.interior, "(4.5)", "Interior Painting", "Rs 15000", Pntdetails1.class));
         cardItemList.add(new categorymodel(R.drawable.exterior, "(4.0)", "Exterior Painting", "Rs 20000", Pntdetails2.class));
         cardItemList.add(new categorymodel(R.drawable.wallpaper, "(4.7)", "Wallpaper Vinyl", "Rs 10000", Pntdetails3.class));
         cardItemList.add(new categorymodel(R.drawable.ceiling, "(4.2)", "Ceiling Painting", "Rs 18000", Pntdetails4.class));
-        // Add more items as needed
+        
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {
             Intent intent = new Intent(PaintingCategory.this, item.getTargetActivity());

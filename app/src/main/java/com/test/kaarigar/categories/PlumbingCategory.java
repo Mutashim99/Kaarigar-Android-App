@@ -18,6 +18,10 @@ import com.test.kaarigar.Signup;
 import com.test.kaarigar.categories.categoryAdapter;
 import com.test.kaarigar.categories.categorymodel;
 import com.test.kaarigar.chooselocation;
+import com.test.kaarigar.detailpage.Plmbdetails1;
+import com.test.kaarigar.detailpage.Plmbdetails2;
+import com.test.kaarigar.detailpage.Plmbdetails3;
+import com.test.kaarigar.detailpage.Plmbdetails4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +49,10 @@ public class PlumbingCategory extends AppCompatActivity {
 
         cardItemList = new ArrayList<>();
         // Add data to cardItemList with the target activities
-        cardItemList.add(new categorymodel(R.drawable.pipes, "(4.5)", "Pipe Repair", "Rs 1500", Signup.class));
-        cardItemList.add(new categorymodel(R.drawable.drain, "(4.0)", "Drain Cleaning", "Rs 2000", chooselocation.class));
-        cardItemList.add(new categorymodel(R.drawable.leak, "(4.7)", "Leak Fixing", "Rs 1000", Onboarding.class));
-        cardItemList.add(new categorymodel(R.drawable.heater, "(4.2)", "Water Heater Repair", "Rs 18000", Login.class));
+        cardItemList.add(new categorymodel(R.drawable.pipes, "(4.5)", "Pipe Repair", "Rs 1500", Plmbdetails1.class));
+        cardItemList.add(new categorymodel(R.drawable.drain, "(4.0)", "Drain Cleaning", "Rs 2000", Plmbdetails2.class));
+        cardItemList.add(new categorymodel(R.drawable.leak, "(4.7)", "Leak Fixing", "Rs 1000", Plmbdetails3.class));
+        cardItemList.add(new categorymodel(R.drawable.heater, "(4.2)", "Water Heater Repair", "Rs 18000", Plmbdetails4.class));
         // Add more items as needed
 
         cardAdapter = new categoryAdapter(cardItemList, item -> {

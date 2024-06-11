@@ -7,8 +7,8 @@
     <item android:title="Bookings"
         android:icon="@drawable/bookings"
         android:id="@+id/bookingsFragment"/>
-    <item android:title="Messages"
-        android:icon="@drawable/messages"
+    <item android:title="Account"
+        android:icon="@drawable/account"
         android:id="@+id/messagesFragment"/>
     <item android:title="About Us"
         android:icon="@drawable/about"

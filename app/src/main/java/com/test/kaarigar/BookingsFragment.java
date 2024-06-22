@@ -46,15 +46,15 @@ public class BookingsFragment extends Fragment {
 
         // Temporary data for testing
         if (bookingList.isEmpty()) {
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop1));
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop2));
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop3));
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop4));
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop2));
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop3));
-            bookingList.add(new Booking("Booking 1", "$200", "0987654321", R.drawable.pop5));
+            bookingList.add(new Booking("Water Heater Repair", "Rs 18000", "0321346231", R.drawable.heater));
+            bookingList.add(new Booking("Hair Styling", "Rs 2000", "0321654315", R.drawable.hair));
+            bookingList.add(new Booking("Interior Painting", "Rs 15000", "0335435464", R.drawable.interior));
+            bookingList.add(new Booking("Booking 1", "$200", "0363134354", R.drawable.leak));
+            bookingList.add(new Booking("Booking 1", "$200", "0367654654", R.drawable.laptop));
+            bookingList.add(new Booking("Booking 1", "$200", "0387654321", R.drawable.mobile));
+            bookingList.add(new Booking("Booking 1", "$200", "0387654321", R.drawable.oven));
+            bookingList.add(new Booking("Booking 1", "$200", "0387654321", R.drawable.exterior));
+            bookingList.add(new Booking("Booking 1", "$200", "0387654321", R.drawable.sofa));
 
             saveBookings();
         }

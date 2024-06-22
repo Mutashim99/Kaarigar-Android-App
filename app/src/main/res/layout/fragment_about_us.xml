@@ -91,7 +91,7 @@
                 android:layout_height="100dp"
                 android:contentDescription="Team Member 2"
                 android:scaleType="centerCrop"
-                android:src="@drawable/defaultprof" />
+                android:src="@drawable/izharimg" />
 
             <TextView
                 android:id="@+id/text_member2_name"

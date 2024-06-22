@@ -61,11 +61,7 @@ public class AboutUsFragment extends Fragment {
         textMember3Name.setText("Rayyan Wamiq");
         textMember4Name.setText("Jazib Noor");
 
-        // Set team member images
-        imageMember1.setImageResource(R.drawable.ic_member1);
-        imageMember2.setImageResource(R.drawable.ic_member2);
-        imageMember3.setImageResource(R.drawable.ic_member3);
-        imageMember4.setImageResource(R.drawable.ic_member4);
+
 
         // Set GitHub button click listener
         buttonGitHub.setOnClickListener(v -> {

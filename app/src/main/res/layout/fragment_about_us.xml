@@ -12,12 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/inter_bold"
         android:text="About Us"
         android:textColor="@color/maintheme"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <!-- Company Description -->
@@ -25,7 +25,7 @@
         android:id="@+id/text_company_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="9dp"
         android:fontFamily="@font/inter_medium"
         android:lineSpacingMultiplier="1.3"
         android:text="@string/company_description_long"
@@ -36,7 +36,7 @@
         android:id="@+id/text_group_members"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/inter_bold"
         android:text="Group Members"
         android:textColor="@color/maintheme"
@@ -47,23 +47,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="24dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
 
         <!-- Team Member 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_member1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/myimg"
+                android:contentDescription="Team Member 1"
                 android:scaleType="centerCrop"
-                android:contentDescription="Team Member 1" />
+                android:src="@drawable/myimg" />
 
             <TextView
                 android:id="@+id/text_member1_name"
@@ -80,16 +81,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_member2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/ic_member2"
+                android:contentDescription="Team Member 2"
                 android:scaleType="centerCrop"
-                android:contentDescription="Team Member 2" />
+                android:src="@drawable/defaultprof" />
 
             <TextView
                 android:id="@+id/text_member2_name"
@@ -106,16 +108,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_member3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/rayyanimg"
+                android:contentDescription="Team Member 3"
                 android:scaleType="centerCrop"
-                android:contentDescription="Team Member 3" />
+                android:src="@drawable/rayyanimg" />
 
             <TextView
                 android:id="@+id/text_member3_name"
@@ -132,16 +135,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_member4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/ic_member4"
+                android:contentDescription="Team Member 4"
                 android:scaleType="centerCrop"
-                android:contentDescription="Team Member 4" />
+                android:src="@drawable/defaultprof" />
 
             <TextView
                 android:id="@+id/text_member4_name"

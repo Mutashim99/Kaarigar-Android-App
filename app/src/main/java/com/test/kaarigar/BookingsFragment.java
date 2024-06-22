@@ -50,11 +50,7 @@ public class BookingsFragment extends Fragment {
             bookingList.add(new Booking("Hair Styling", "Rs 2000", "0321654315", R.drawable.hair));
             bookingList.add(new Booking("Interior Painting", "Rs 15000", "0335435464", R.drawable.interior));
             bookingList.add(new Booking("Booking 1", "$200", "0363134354", R.drawable.leak));
-            bookingList.add(new Booking("Booking 1", "$200", "0367654654", R.drawable.laptop));
-            bookingList.add(new Booking("Booking 1", "$200", "0387654321", R.drawable.mobile));
-            bookingList.add(new Booking("Booking 1", "$200", "0387654321", R.drawable.oven));
-            bookingList.add(new Booking("Booking 1", "$200", "0387654321", R.drawable.exterior));
-            bookingList.add(new Booking("Booking 1", "$200", "0387654321", R.drawable.sofa));
+
 
             saveBookings();
         }

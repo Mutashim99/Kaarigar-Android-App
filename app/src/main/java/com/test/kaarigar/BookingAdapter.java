@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
@@ -27,14 +28,10 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.BookingV
     private List<Booking> bookingList;
     private Context context;
     private String pendingCallNumber;
-    private SharedPreferences sharedPreferences;
-    private Gson gson;
 
     public BookingAdapter(List<Booking> bookingList, Context context) {
         this.bookingList = bookingList;
         this.context = context;
-        this.sharedPreferences = context.getSharedPreferences("bookings", Context.MODE_PRIVATE);
-        this.gson = new Gson();
     }
 
     @NonNull
@@ -114,7 +111,9 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.BookingV
     }
 
     private void saveBookings() {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("bookings", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+        Gson gson = new Gson();
         String json = gson.toJson(bookingList);
         editor.putString("bookingList", json);
         editor.apply();

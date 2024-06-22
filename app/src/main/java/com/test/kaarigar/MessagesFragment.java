@@ -86,10 +86,6 @@ public class MessagesFragment extends Fragment {
             startActivityForResult(intent, PICK_IMAGE);
         });
 
-        resetPassword.setOnClickListener(v -> {
-            // Logic to reset password
-            Toast.makeText(getActivity(), "Reset Password clicked", Toast.LENGTH_SHORT).show();
-        });
     }
 
     @Override

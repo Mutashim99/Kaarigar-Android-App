@@ -1,8 +1,10 @@
 package com.test.kaarigar;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,13 +13,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import java.io.IOException;
@@ -25,11 +29,13 @@ import java.io.IOException;
 public class MessagesFragment extends Fragment {
 
     private static final int PICK_IMAGE = 1;
+    private static final int REQUEST_STORAGE_PERMISSION = 100;
 
     private ImageView profilePic;
-    private TextView username, email, location;
-    private TextView password;
-    private Button resetPassword, changeProfilePic;
+    private TextView username, email, location, password;
+    private Button changeProfilePic;
+
+    private boolean isPasswordVisible = false;
 
     public MessagesFragment() {
         // Required empty public constructor
@@ -48,7 +54,7 @@ public class MessagesFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            // Retrieve the parameters passed to the fragment
+            // Retrieve the parameters passed to the fragment if any
         }
     }
 
@@ -72,7 +78,7 @@ public class MessagesFragment extends Fragment {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
         username.setText(sharedPreferences.getString("username", "N/A"));
         email.setText(sharedPreferences.getString("email", "N/A"));
-        password.setText(sharedPreferences.getString("password", ""));
+        password.setText(sharedPreferences.getString("password", "********"));  // Assuming password is stored securely and displayed as asterisks
         location.setText(sharedPreferences.getString("location", "N/A"));
 
         // Load saved profile picture if available
@@ -82,10 +88,17 @@ public class MessagesFragment extends Fragment {
         }
 
         changeProfilePic.setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            startActivityForResult(intent, PICK_IMAGE);
+            if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_STORAGE_PERMISSION);
+            } else {
+                openImagePicker();
+            }
         });
+    }
 
+    private void openImagePicker() {
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, PICK_IMAGE);
     }
 
     @Override
@@ -105,6 +118,18 @@ public class MessagesFragment extends Fragment {
 
             } catch (IOException e) {
                 e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQUEST_STORAGE_PERMISSION) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                openImagePicker();
+            } else {
+                Toast.makeText(getContext(), "Permission denied", Toast.LENGTH_SHORT).show();
             }
         }
     }

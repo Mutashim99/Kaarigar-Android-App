@@ -50,11 +50,11 @@ public class HomeFragment extends Fragment {
         recyclerView.setLayoutManager(horizontalLayoutManager);
 
         List<CardItem> cardItemList = new ArrayList<>();
-        cardItemList.add(new CardItem(R.drawable.pop1, "Home \nCleaning", "5.0", "Rs 1000"));
-        cardItemList.add(new CardItem(R.drawable.pop2, "Home \nDisInfection", "4.5", "Rs 2000"));
-        cardItemList.add(new CardItem(R.drawable.pop3, "Ac \nCheckup", "4.8", "Rs 1500"));
-        cardItemList.add(new CardItem(R.drawable.pop4, "Ac \nRepair", "4.2", "Rs 5000"));
-        cardItemList.add(new CardItem(R.drawable.pop5, "Ac \nMaintenance", "4.2", "Rs 1800"));
+        cardItemList.add(new CardItem(R.drawable.microwave, "Microwave \nRepairing", "4.7", "Rs 1000"));
+        cardItemList.add(new CardItem(R.drawable.furniture_shifting, "Furniture \nShifting", "4.2", "Rs 1800"));
+        cardItemList.add(new CardItem(R.drawable.sofa, "Sofa  \nCleaning", "4.2", "Rs 1800"));
+        cardItemList.add(new CardItem(R.drawable.exterior, "Exterior \npainting", "4.0", "Rs 20000"));
+        cardItemList.add(new CardItem(R.drawable.tv, "Tv \nRepair", "4.2", "Rs 18000"));
 
         cardAdapter = new CardAdapter(cardItemList);
         recyclerView.setAdapter(cardAdapter);

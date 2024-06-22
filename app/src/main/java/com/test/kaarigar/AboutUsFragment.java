@@ -1,64 +1,78 @@
+// AboutUsFragment.java
+
 package com.test.kaarigar;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link AboutUsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 public class AboutUsFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private TextView textAboutUs, textCompanyDescription,
+            textMember1Name, textMember2Name, textMember3Name, textMember4Name;
+    private ImageView imageMember1, imageMember2, imageMember3, imageMember4;
+    private Button buttonGitHub;
 
     public AboutUsFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment AboutUsFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static AboutUsFragment newInstance(String param1, String param2) {
-        AboutUsFragment fragment = new AboutUsFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_about_us, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        // Initialize views
+        textAboutUs = view.findViewById(R.id.text_about_us);
+        textCompanyDescription = view.findViewById(R.id.text_company_description);
+        textMember1Name = view.findViewById(R.id.text_member1_name);
+        textMember2Name = view.findViewById(R.id.text_member2_name);
+        textMember3Name = view.findViewById(R.id.text_member3_name);
+        textMember4Name = view.findViewById(R.id.text_member4_name);
+        imageMember1 = view.findViewById(R.id.image_member1);
+        imageMember2 = view.findViewById(R.id.image_member2);
+        imageMember3 = view.findViewById(R.id.image_member3);
+        imageMember4 = view.findViewById(R.id.image_member4);
+        buttonGitHub = view.findViewById(R.id.button_github);
+
+        // Set company description
+        String companyDescription = getString(R.string.company_description_long);
+        textCompanyDescription.setText(companyDescription);
+
+        // Set team member details
+        textMember1Name.setText("Hafiz M. Mutashim Mohsin");
+        textMember2Name.setText("Izhar ul Haq");
+        textMember3Name.setText("Rayyan Wamiq");
+        textMember4Name.setText("Jazib Noor");
+
+        // Set team member images
+        imageMember1.setImageResource(R.drawable.ic_member1);
+        imageMember2.setImageResource(R.drawable.ic_member2);
+        imageMember3.setImageResource(R.drawable.ic_member3);
+        imageMember4.setImageResource(R.drawable.ic_member4);
+
+        // Set GitHub button click listener
+        buttonGitHub.setOnClickListener(v -> {
+            // Open GitHub link
+            String githubUrl = "https://github.com/Muhtashim99";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(githubUrl));
+            startActivity(intent);
+        });
     }
 }

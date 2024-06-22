@@ -2,4 +2,8 @@
     <string name="app_name">Kaarigar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="company_description_long">
+        Kaarigar is a Pakistan-based company dedicated to providing a wide range of home services. Our services include AC repair, appliance repair, beauty services, home cleaning, and much more. At Kaarigar, we strive to deliver exceptional service quality and customer satisfaction.
+    </string>
+
 </resources>

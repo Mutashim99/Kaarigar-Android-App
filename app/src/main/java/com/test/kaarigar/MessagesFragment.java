@@ -28,7 +28,7 @@ public class MessagesFragment extends Fragment {
 
     private ImageView profilePic;
     private TextView username, email, location;
-    private EditText password;
+    private TextView password;
     private Button resetPassword, changeProfilePic;
 
     public MessagesFragment() {
@@ -67,7 +67,6 @@ public class MessagesFragment extends Fragment {
         email = view.findViewById(R.id.email);
         password = view.findViewById(R.id.password);
         location = view.findViewById(R.id.location);
-        resetPassword = view.findViewById(R.id.reset_password);
         changeProfilePic = view.findViewById(R.id.change_profile_pic);
 
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);

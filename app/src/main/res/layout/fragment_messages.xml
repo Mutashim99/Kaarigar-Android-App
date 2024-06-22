@@ -24,9 +24,9 @@
             android:id="@+id/profile_pic"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="Profile Picture"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_foreground"
-            android:contentDescription="Profile Picture" />
+            android:src="@drawable/defaultprof" />
     </androidx.cardview.widget.CardView>
 
     <!-- Change Profile Picture Button -->
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@id/profile_card"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="16dp" />
 
     <!-- User Info Card -->
     <androidx.cardview.widget.CardView
@@ -65,7 +65,8 @@
                 android:text="Username"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/textColorPrimary" />
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginBottom="8dp" />
 
             <TextView
                 android:id="@+id/email"
@@ -73,18 +74,19 @@
                 android:layout_height="wrap_content"
                 android:text="Email"
                 android:textSize="16sp"
+                android:textColor="@color/textColorSecondary"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/textColorSecondary" />
+                android:layout_marginBottom="8dp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="text"
+                android:text="Password"
+                android:textSize="16sp"
+                android:textColor="@color/textColorSecondary"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/edittextshape"
-                android:padding="12dp" />
+                android:layout_marginBottom="8dp" />
 
             <TextView
                 android:id="@+id/location"
@@ -92,20 +94,10 @@
                 android:layout_height="wrap_content"
                 android:text="Location"
                 android:textSize="16sp"
+                android:textColor="@color/textColorSecondary"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/textColorSecondary" />
+                android:layout_marginBottom="8dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <!-- Reset Password Button -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/reset_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reset Password"
-        app:layout_constraintTop_toBottomOf="@id/user_info_card"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

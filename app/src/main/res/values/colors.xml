@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="maintheme">#0085EA</color>
     <color name="text" > #1A1B2D </color>
+    <color name="background">#FAFAFA</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#757575</color>
 </resources>

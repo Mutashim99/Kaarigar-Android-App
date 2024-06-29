@@ -2,9 +2,19 @@ package com.test.kaarigar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
@@ -16,12 +26,11 @@ import com.test.kaarigar.categories.ElectronicsCategory;
 import com.test.kaarigar.categories.PaintingCategory;
 import com.test.kaarigar.categories.PlumbingCategory;
 import com.test.kaarigar.categories.ShiftingCategory;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
+import com.test.kaarigar.detailpage.APdetails3;
+import com.test.kaarigar.detailpage.Cldetails4;
+import com.test.kaarigar.detailpage.Elcdetails3;
+import com.test.kaarigar.detailpage.Pntdetails2;
+import com.test.kaarigar.detailpage.Shftdetails4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,9 +47,10 @@ public class HomeFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
@@ -56,7 +66,34 @@ public class HomeFragment extends Fragment {
         cardItemList.add(new CardItem(R.drawable.exterior, "Exterior \npainting", "4.0", "Rs 20000"));
         cardItemList.add(new CardItem(R.drawable.tv, "Tv \nRepair", "4.2", "Rs 18000"));
 
-        cardAdapter = new CardAdapter(cardItemList);
+        cardAdapter = new CardAdapter(cardItemList, new OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                // Handle item click
+               switch (position){
+                   case 0:
+                       Intent intent0 = new Intent(getActivity(), APdetails3.class);
+                       startActivity(intent0);
+                       break;
+               case 1:
+                   Intent intent1 = new Intent(getActivity(), Shftdetails4.class);
+                   startActivity(intent1);
+                   break;
+               case 2:
+                   Intent intent2 = new Intent(getActivity(), Cldetails4.class);
+                   startActivity(intent2);
+                   break;
+                   case 3:
+                       Intent intent3 = new Intent(getActivity(), Pntdetails2.class);
+                       startActivity(intent3);
+                       break;
+                   case 4:
+                       Intent intent4 = new Intent(getActivity(), Elcdetails3.class);
+                       startActivity(intent4);
+                       break;
+               }
+            }
+        });
         recyclerView.setAdapter(cardAdapter);
 
         // Setup ImageSlider
@@ -80,7 +117,7 @@ public class HomeFragment extends Fragment {
 
         ImageView notify = view.findViewById(R.id.notificationmain);
         notify.setOnClickListener(v -> {
-            Intent gotonotifypage = new Intent(getActivity(),notificationActivity.class);
+            Intent gotonotifypage = new Intent(getActivity(), notificationActivity.class);
             startActivity(gotonotifypage);
         });
 
@@ -93,67 +130,43 @@ public class HomeFragment extends Fragment {
         ImageView plum = view.findViewById(R.id.plumbing);
         ImageView shft = view.findViewById(R.id.shifting);
 
-        ac.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goac = new Intent(getActivity(), AcrepairCategory.class);
-                startActivity(goac);
-            }
+        ac.setOnClickListener(v -> {
+            Intent goac = new Intent(getActivity(), AcrepairCategory.class);
+            startActivity(goac);
         });
-        bty.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent gobty = new Intent(getActivity(), BeautyCategory.class);
-                startActivity(gobty);
-            }
+        bty.setOnClickListener(v -> {
+            Intent gobty = new Intent(getActivity(), BeautyCategory.class);
+            startActivity(gobty);
         });
 
-        apl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goapl = new Intent(getActivity(), AppliancesCategory.class);
-                startActivity(goapl);
-            }
+        apl.setOnClickListener(v -> {
+            Intent goapl = new Intent(getActivity(), AppliancesCategory.class);
+            startActivity(goapl);
         });
 
-        elc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goelc = new Intent(getActivity(), ElectronicsCategory.class);
-                startActivity(goelc);
-            }
+        elc.setOnClickListener(v -> {
+            Intent goelc = new Intent(getActivity(), ElectronicsCategory.class);
+            startActivity(goelc);
         });
 
-        cln.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent gocln = new Intent(getActivity(), CleaningCategory.class);
-                startActivity(gocln);
-            }
+        cln.setOnClickListener(v -> {
+            Intent gocln = new Intent(getActivity(), CleaningCategory.class);
+            startActivity(gocln);
         });
 
-        paint.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent gopaint = new Intent(getActivity(), PaintingCategory.class);
-                startActivity(gopaint);
-            }
+        paint.setOnClickListener(v -> {
+            Intent gopaint = new Intent(getActivity(), PaintingCategory.class);
+            startActivity(gopaint);
         });
 
-        plum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goplum = new Intent(getActivity(), PlumbingCategory.class);
-                startActivity(goplum);
-            }
+        plum.setOnClickListener(v -> {
+            Intent goplum = new Intent(getActivity(), PlumbingCategory.class);
+            startActivity(goplum);
         });
 
-        shft.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goshft = new Intent(getActivity(), ShiftingCategory.class);
-                startActivity(goshft);
-            }
+        shft.setOnClickListener(v -> {
+            Intent goshft = new Intent(getActivity(), ShiftingCategory.class);
+            startActivity(goshft);
         });
 
         return view;

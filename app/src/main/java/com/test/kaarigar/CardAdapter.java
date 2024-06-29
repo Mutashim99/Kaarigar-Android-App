@@ -14,9 +14,11 @@ import java.util.List;
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder> {
 
     private List<CardItem> cardItemList;
+    private OnItemClickListener listener;
 
-    public CardAdapter(List<CardItem> cardItemList) {
+    public CardAdapter(List<CardItem> cardItemList, OnItemClickListener listener) {
         this.cardItemList = cardItemList;
+        this.listener = listener;
     }
 
     @NonNull
@@ -33,6 +35,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         holder.serviceName.setText(cardItem.getServiceName());
         holder.rating.setText(cardItem.getRating());
         holder.price.setText(cardItem.getPrice());
+        holder.bind(position, listener);
     }
 
     @Override
@@ -51,6 +54,15 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
             ratingIcon = itemView.findViewById(R.id.imageView23);
             rating = itemView.findViewById(R.id.textView22);
             price = itemView.findViewById(R.id.paisa);
+        }
+
+        public void bind(final int position, final OnItemClickListener listener) {
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onItemClick(position);
+                }
+            });
         }
     }
 }

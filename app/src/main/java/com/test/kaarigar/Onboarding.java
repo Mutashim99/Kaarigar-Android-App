@@ -32,6 +32,7 @@ public class Onboarding extends AppCompatActivity {
             public void onClick(View v) {
                 Intent isign = new Intent(Onboarding.this,Signup.class);
                 startActivity(isign);
+                finish();
             }
         });
 

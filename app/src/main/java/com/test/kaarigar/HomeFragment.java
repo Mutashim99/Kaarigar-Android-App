@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.interfaces.ItemClickListener;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.test.kaarigar.categories.AcrepairCategory;
 import com.test.kaarigar.categories.AppliancesCategory;
@@ -107,6 +108,42 @@ public class HomeFragment extends Fragment {
         imageList.add(new SlideModel(R.drawable.banner5, ScaleTypes.FIT));
 
         imageSlider.setImageList(imageList, ScaleTypes.FIT);
+
+        imageSlider.setItemClickListener(new ItemClickListener() {
+            @Override
+            public void onItemSelected(int position) {
+                switch (position){
+                    case 0:
+                        Intent intent00 = new Intent(getActivity(), CleaningCategory.class);
+                        startActivity(intent00);
+                        break;
+                    case 1:
+                        Intent intent01 = new Intent(getActivity(), ShiftingCategory.class);
+                        startActivity(intent01);
+                        break;
+                    case 2:
+                        Intent intent02 = new Intent(getActivity(), PlumbingCategory.class);
+                        startActivity(intent02);
+                        break;
+                    case 3:
+                        Intent intent03 = new Intent(getActivity(), PaintingCategory.class);
+                        startActivity(intent03);
+                        break;
+                    case 4:
+                        Intent intent04 = new Intent(getActivity(), ElectronicsCategory.class);
+                        startActivity(intent04);
+                        break;
+                }
+            }
+
+            @Override
+            public void doubleClick(int position) {
+                // Do not use onItemSelected if you are using a double click listener at the same time.
+                // It's just added for specific cases.
+                // Listen for clicks under 250 milliseconds.
+            }
+        });
+
 
         // Setup Search Button
         searchButton = view.findViewById(R.id.searchButton);

@@ -78,10 +78,9 @@ public class MessagesFragment extends Fragment {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
         username.setText(sharedPreferences.getString("username", "N/A"));
         email.setText(sharedPreferences.getString("email", "N/A"));
-        password.setText(sharedPreferences.getString("password", "********"));  // Assuming password is stored securely and displayed as asterisks
+        password.setText(sharedPreferences.getString("password", "********"));
         location.setText(sharedPreferences.getString("location", "N/A"));
 
-        // Load saved profile picture if available
         String profilePicUri = sharedPreferences.getString("profile_pic", null);
         if (profilePicUri != null) {
             profilePic.setImageURI(Uri.parse(profilePicUri));
